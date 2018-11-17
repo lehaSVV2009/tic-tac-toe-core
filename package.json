@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lehaSVV2009/tic-tac-toe-core.git"
+    "url": "git+https://github.com/lehaSVV2009/tic-tac-toe.git"
   },
   "keywords": [
     "tic-tac-toe",
@@ -18,12 +18,13 @@
   ],
   "scripts": {
     "build": "babel src -d build",
-    "prepare": "babel src -d build"
+    "postinstall": "postinstall-build lib"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "postinstall-build": "^5.0.3"
   },
   "peerDependencies": {
     "boardgame.io": ">= 0.26.3"
