@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "babel src -d build",
-    "postinstall": "postinstall-build lib"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -27,8 +27,5 @@
   },
   "peerDependencies": {
     "boardgame.io": ">= 0.26.3"
-  },
-  "dependencies": {
-    "postinstall-build": "^5.0.3"
   }
 }
