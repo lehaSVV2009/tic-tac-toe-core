@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "babel src -d build",
-    "prepare": "npm run build"
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
